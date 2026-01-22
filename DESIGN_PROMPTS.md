@@ -60,8 +60,12 @@ Development log documenting prompts and design decisions.
 
 **Deployment details**:
 - GitHub: https://github.com/nwinter/cities
-- Vercel project: us-cities-ranking (nick-winters-projects-49b46ac0)
+- Vercel project: cities-ranking (nick-winters-projects-49b46ac0)
 - Custom domain: cities.nickwinter.net (A record → 76.76.21.21)
 - Cloudflare DNS: DNS only (proxy disabled)
 
-**Note**: There's also a second project `cities` with different data structure (uses `crimeRate` instead of `medianIncome`). The live site uses the `us-cities-ranking` deployment which has median income data.
+The dashboard displays 40 major US cities with 4 ranking factors:
+1. Population (city size indicator)
+2. Homeless Percentage (homelessness severity)
+3. Cost of Living Index (affordability)
+4. Crime Rate (safety metric - violent crimes per 100k)
